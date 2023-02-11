@@ -9,8 +9,11 @@
 </head>
 <body>
     <script src="script.js"></script>
-    <input id="betreffFeld" type="text">
-    <textarea id="nachrichtenFeld"></textarea>
-    <button onclick="emailProgrammOeffnen()">Schreiben Sie mir eine E-Mail.</button>
+
+    <div id="container">
+        <input id="betreffFeld" type="text" placeholder="Betreff">
+        <textarea id="nachrichtenFeld" placeholder="Nachricht"></textarea>
+        <button id="sendenButton" onclick="emailProgrammOeffnen()">Senden</button>
+    </div>
 </body>
 </html>
