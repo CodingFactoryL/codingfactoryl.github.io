@@ -20,3 +20,9 @@ function emailProgrammOeffnen(){
         window.open(`mailto:codingfactoryl0@gmail.com?subject=${betreff}&body=${nachricht}`);
     }
 }
+
+function telefonnummerGeaendert(){
+    if(parseInt(document.getElementById("telefonNummernFeld").value, 10) < 0){
+        document.getElementById("telefonNummernFeld").value = "";
+    }
+}
