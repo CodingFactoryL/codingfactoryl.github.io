@@ -2,10 +2,16 @@ body{
     background-color: #192735;
 }
 
+input, select{
+    font-size: 1.5rem;
+}
+
+#geschlechtFeld, #namenFeld, #telefonNummernFeld{
+    margin: 1%;
+    margin-left: 0;
+}
+
 #container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 80%;
     height: 80%;
     margin: 10% auto;
@@ -20,13 +26,16 @@ body{
 } 
 
 #nachrichtenFeld{
+    display: inline-flex;
     resize: none;
-    min-height: 100px;
+    min-height: 20vh;
+    min-width: 100%;
     font-size: 1rem;
 }
 
 #sendenButton{
-    width: 30%;
-    height: 40%;
+    width: 40%;
+    height: 4vh;
     margin-top: 2%;
+    font-size: 1rem;
 }

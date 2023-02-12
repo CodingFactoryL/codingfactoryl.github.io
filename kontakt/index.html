@@ -11,9 +11,23 @@
     <script src="script.js"></script>
 
     <div id="container">
-        <input id="betreffFeld" type="text" placeholder="Betreff">
-        <textarea id="nachrichtenFeld" placeholder="Nachricht"></textarea>
-        <button id="sendenButton" onclick="emailProgrammOeffnen()">Senden</button>
+        <form id="form">
+            <select id="geschlechtFeld" required>
+                <option value="" disabled selected>Geschlecht auswählen</option>
+                <option>Herr</option>
+                <option>Frau</option>
+                <option>Divers</option>
+            </select>
+            <input id="namenFeld" type="text" placeholder="Name" required>
+            <input id="telefonNummernFeld" type="number" placeholder="Telefonnumer">
+             <br>
+            <input id="betreffFeld" type="text" placeholder="Betreff" required>
+            <br>
+            <textarea id="nachrichtenFeld" placeholder="Nachricht" required></textarea>
+            <br>
+            <button id="sendenButton" onclick="emailProgrammOeffnen()">Senden</button>
+        </form>
     </div>
 </body>
+
 </html>
