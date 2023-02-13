@@ -1,6 +1,8 @@
 button{
     background: none;
     border: none;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
 }
 
 .tag{

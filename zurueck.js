@@ -1,0 +1,3 @@
+function zurueckButtonGeklickt(){
+    location.assign('../');
+}
