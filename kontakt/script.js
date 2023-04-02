@@ -16,7 +16,7 @@ function emailProgrammOeffnen(){
     }
 
     if(geschlecht !== "" &&  name !== "" && betreff !== "" && nachricht !== ""){
-        window.open(`mailto:codingfactoryl0@gmail.com?subject=${betreff}&body=${nachricht}`);
+        window.open(`mailto:codingfactoryl12@gmail.com?subject=${betreff}&body=${nachricht}`);
     }
 }
 
