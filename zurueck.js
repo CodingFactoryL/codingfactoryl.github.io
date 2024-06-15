@@ -1,3 +1,3 @@
 function zurueckButtonGeklickt(){
-    location.assign('../');
+    location.assign('../index.html');
 }

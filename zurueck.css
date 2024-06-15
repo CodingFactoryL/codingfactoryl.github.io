@@ -1,6 +1,6 @@
 .zurueckButton{
     position: fixed;
-    width: 7%;
+    width: 5%;
     aspect-ratio: 1 / 1;
     margin: 5px;
     background: url("assets/zurueck.ico") no-repeat top center;
