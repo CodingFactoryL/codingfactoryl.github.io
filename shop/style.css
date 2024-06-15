@@ -1,0 +1,79 @@
+body {
+    background-color: #192735;
+}
+
+#timeline {
+    margin: 20px auto;
+    width: 1%;
+    background: linear-gradient(66deg, rgba(5,109,187,1) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    height: 95vh;   /*Zahl erhöhen, um Leiste länger zu machen*/
+}
+
+.timelineEntry {
+    position: relative;
+    width: 250%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: cadetblue;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.timelineEntryContainer {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.leftAlignedEntry {
+    float: right;
+}
+
+.rightAlignedEntry {
+    float: left;
+}
+
+.projectName {
+    position: absolute;
+    font-size: 2vw;
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    bottom: 2.5vw;
+}
+
+.dateCreated{
+    position: absolute;
+    font-size: 1.5vw;
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    top: -1.5vw;
+}
+
+.horizontalLine {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 25%;
+    background-color: cadetblue;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.rightAlignedText {
+    position: relative;
+    padding-left: 6vw;
+    padding-right: 1vw;
+    float: right;
+}
+
+.leftAlignedText {
+    position: relative;
+    padding-right: 6vw;
+    padding-left: 1vw;
+    float: left;
+}
