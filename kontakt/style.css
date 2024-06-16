@@ -1,42 +1,78 @@
-body{
-    background-color: #192735;
-    display: inline-block;
+
+
+
+
+body {
+    background-color: #192735
+   
 }
 
-input, select{
-    font-size: 1.5rem;
+#contactContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
-#geschlechtFeld, #namenFeld, #telefonNummernFeld{
-    margin: 1%;
-    margin-left: 0;
+#emailContactButton, #discordContactButton{
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background-size: cover;
+    border-radius: 40px;
+    margin: 2%;
 }
 
-#container{
-    width: 80%;
-    height: 80%;
-    margin: 10% auto;
+#emailContactButton{
+    background-image: url(../assets/email.png);
+    animation: fromLeft 1s;
+    animation-fill-mode: forwards;
 }
 
-
-#betreffFeld{
-    width: 50%;
-    margin-bottom: 2%;
-    font-size: 1.5rem;
-    font-weight: bold;
-} 
-
-#nachrichtenFeld{
-    display: inline-flex;
-    resize: none;
-    min-height: 20vh;
-    min-width: 100%;
-    font-size: 1rem;
+#discordContactButton{
+    background-image: url(../assets/discord.png);
+    animation: fromRight 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-#sendenButton{
-    width: 40%;
-    height: 4vh;
-    margin-top: 2%;
-    font-size: 1rem;
+@media (orientation: landscape) {
+    #contactContainer{
+        flex-direction: row;
+    }
+}
+
+@media (orientation: portrait) {
+    #contactContainer{
+        flex-direction: column;
+    }
+
+    #emailContactButton, #discordContactButton{
+        width: 30vw;
+        margin: 5%;
+    }
+}
+
+@keyframes fromLeft {
+    from{
+        opacity: 0;
+        transform: translateY(-70%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromRight {
+    from{
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
