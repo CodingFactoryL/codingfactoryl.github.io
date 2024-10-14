@@ -6,5 +6,5 @@ function emailContactButtonClicked(){
 }
 
 function discordContactButtonClicked(){
-    window.open('https://discord.gg/deftTGQzb2');
+    window.open('https://discord.gg/dKHqgF2y4h');
 }
