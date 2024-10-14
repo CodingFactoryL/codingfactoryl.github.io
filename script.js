@@ -7,7 +7,7 @@ function kontaktAufrufen(){
 }
 
 function shopAufrufen(){
-    location.assign('./shop/index.html');
+    location.assign('codingfactoryl.github.io/shop');
 }
 
 function bilder (){
