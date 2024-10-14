@@ -1,182 +1,78 @@
-button{
-    background: none;
-    border: none;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 0px;
+
+
+
+
+body {
+    background-color: #192735
+   
 }
 
-.tag{
-    width: 3%;
-}
-
-.linkText{
-    text-decoration: none;
-    color: aqua;
-    font-size: 2rem;  
-    margin: 10px;     
-} 
-
-.buttonContainer{    
-    display: flex;
-    align-items: center;
-}
-
-body{
-    background-color: #192735;
-    overflow-x: hidden;
-}
-
-#logoContainer{
-    position: relative;
+#contactContainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100svh;
-}
- 
-#logoLeftArrowImage{
-    position: relative;
-    right: 1%;
-    animation: 2s logoLeftArrowMovement;
-    animation-fill-mode: forwards;
-}
-
-#logoText{
-    position: absolute;
-    color: white;
-    font-family: sans-serif;
-    animation: textMovement 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    text-decoration: none;
-}
-
-#logoText::before{
-    content: '';
-    position: absolute;
     width: 100%;
-    height: 100%;
-    left: 0%;
-    background-color: #192735;
-    animation: textReveal 1s;
-    animation-delay: 1s;
+    height: 100vh;
+}
+
+#emailContactButton, #discordContactButton{
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background-size: cover;
+    border-radius: 40px;
+    margin: 2%;
+}
+
+#emailContactButton{
+    background-image: url(../assets/email.png);
+    animation: fromLeft 1s;
     animation-fill-mode: forwards;
 }
 
-#logoRightArrowImage{
-    position: relative;
-    left: 1%;
-    animation: 2s logoRightArrowMovement;
+#discordContactButton{
+    background-image: url(../assets/discord.png);
+    animation: fromRight 1s;
+    animation-delay: 0.3s;
     animation-fill-mode: forwards;
-}
-
-@keyframes textReveal {
-    from{
-        left: 0%;
-    }
-    to{
-        left: 100%;
-    }
+    opacity: 0;
 }
 
 @media (orientation: landscape) {
-    #logoText {
-        font-size: 3.5vw;
-    }
-
-    #logoLeftArrowImage {
-        width: 3%;
-    }
-
-    #logoRightArrowImage {
-        width: 3%;
-    }
-
-    @keyframes logoLeftArrowMovement {
-        0%{
-            opacity: 0%;
-            top: 40%;
-        }
-        50%{
-            opacity: 100%;
-            top: 0%;
-            right: 1%;
-        }
-        100%{
-            right: 14%;
-        }
-    }
-    
-    @keyframes logoRightArrowMovement {
-        0%{
-            opacity: 0%;
-            top: 40%;
-        }
-        50%{
-            opacity: 100%;
-            top: 0%;
-            left: 1%;
-        }
-        100%{
-            left: 14%;
-        }
-    }
-    
-    @keyframes textMovement {
-        from{
-            left: 50%;
-        }   
-        to{
-            left: 37.5%;
-        } 
+    #contactContainer{
+        flex-direction: row;
     }
 }
 
 @media (orientation: portrait) {
-    #logoText {
-        font-size: 9.5vw;
+    #contactContainer{
+        flex-direction: column;
     }
 
-    #logoLeftArrowImage, #logoRightArrowImage {
-        width: 7%;
+    #emailContactButton, #discordContactButton{
+        width: 30vw;
+        margin: 5%;
     }
+}
 
-    @keyframes logoLeftArrowMovement {
-        0%{
-            opacity: 0%;
-            top: 40%;
-        }
-        50%{
-            opacity: 100%;
-            top: 0%;
-            right: 1%;
-        }
-        100%{
-            right: 37%;
-        }
+@keyframes fromLeft {
+    from{
+        opacity: 0;
+        transform: translateY(-70%);
     }
-    
-    @keyframes logoRightArrowMovement {
-        0%{
-            opacity: 0%;
-            top: 40%;
-        }
-        50%{
-            opacity: 100%;
-            top: 0%;
-            left: 1%;
-        }
-        100%{
-            left: 37%;
-        }
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
-    
-    @keyframes textMovement {
-        from{
-            margin-left: 70%;
-        }   
-        to{
-            margin-left: 0%
-        } 
+}
+
+@keyframes fromRight {
+    from{
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
