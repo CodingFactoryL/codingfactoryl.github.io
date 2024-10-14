@@ -1,10 +1,15 @@
-
-
-
-function emailContactButtonClicked(){
-    window.open('mailto:codingfactorylstudios@sfn-kassel.de');
+function projekteAufrufen(){
+    location.assign('./projekte/index.html');
 }
 
-function discordContactButtonClicked(){
-    window.open('https://discord.gg/dKHqgF2y4h');
+function kontaktAufrufen(){
+    location.assign('./kontakt/index.html');
+}
+
+function shopAufrufen(){
+    location.assign('./shop/index.html');
+}
+
+function bilder (){
+
 }
