@@ -7,7 +7,7 @@ body {
     width: 1%;
     background: linear-gradient(66deg, rgba(5,109,187,1) 0%, rgba(0,212,255,1) 100%);
     border-radius: 10px;
-    height: 95vh;   /*Zahl erhöhen, um Leiste länger zu machen*/
+    height: 200vh;   /*Zahl erhöhen, um Leiste länger zu machen*/
 }
 
 .timelineEntry {

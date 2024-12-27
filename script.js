@@ -7,9 +7,13 @@ function kontaktAufrufen(){
 }
 
 function shopAufrufen(){
-    location.assign('codingfactoryl.github.io/shop');
+    location.assign('./shop/index.html');
 }
 
 function bilder (){
 
 }
+
+
+
+

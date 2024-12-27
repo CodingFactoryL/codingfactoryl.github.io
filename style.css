@@ -1,8 +1,8 @@
-html{
+body{
     background: linear-gradient(to bottom, 
       #192735 0%,   /* von oben bis 40% blaugrau */
-      #192735 40%,  /* danach von 40% bis 50% Uebergang */
-      #000000 50%,  /* ab 50% schwarz */
+      #192735 50%,  /* danach von 40% bis 50% Uebergang */
+      #000000 60%,  /* ab 50% schwarz */
       #000000 100%
   );
 }
@@ -12,6 +12,16 @@ button{
     border: none;
     font-family: 'Times New Roman', Times, serif;
     padding: 0px;
+}
+
+.linkContainer {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('./assets/OnesAndZeros.gif');
+    background-size: cover;
 }
 
 .tag{
@@ -25,14 +35,17 @@ button{
     margin: 10px;     
 } 
 
-.buttonContainer{    
+.buttonContainer{   
+    margin-top: 10vh; 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 body{
     background-color: #192735;
     overflow-x: hidden;
+    height: 220vh;
 }
 
 #logoContainer{
